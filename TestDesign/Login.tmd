@@ -1,0 +1,11 @@
+{ "class": "GraphLinksModel",
+  "nodeKeyProperty": "id",
+  "linkKeyProperty": "key",
+  "modelData": {"version":1, "nodes":4, "links":0, "actions":22, "variables":3, "variable":[ {"name":"username", "description":"有效用户", "value":"\"Admin\"|\"tester\"", "rule":"randName()", "used":[ "n开始节点","n登录失败" ]},{"name":"password", "description":"my passwd", "value":"123456", "rule":"newpasswd()", "used":[ "n开始节点" ]},{"name":"newvar", "description":"", "value":"", "rule":"", "used":[ "n登录成功" ]} ], "init_actions":"模块的初始化条件"},
+  "nodeDataArray": [ 
+{"id":-1, "loc":"-241 -268", "category":"Start", "text":"开始节点", "description":"这里也可以定义变量", "outputvariable":"username, password", "disabled":false, "properties":"", "action":"", "parameters":""},
+{"id":0, "loc":"-240 -142", "text":"登录页面", "description":"", "outputvariable":"_abc", "action":"", "parameters":"", "disabled":false, "properties":""},
+{"text":"登录失败", "id":-5, "loc":"-7 -15", "description":"", "outputvariable":"username, _abc", "action":"", "parameters":"", "disabled":false, "properties":""},
+{"text":"登录成功", "id":-6, "loc":"20.761904761904702 -148.66666666666669", "description":"", "outputvariable":"newvar,_abc=456,_ab", "disabled":false, "properties":"", "action":"", "parameters":""}
+ ],
+  "linkDataArray": []}

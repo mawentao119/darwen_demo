@@ -1,0 +1,15 @@
+{ "class": "GraphLinksModel",
+  "nodeKeyProperty": "id",
+  "linkKeyProperty": "key",
+  "modelData": {"version":1, "nodes":4, "links":3, "actions":3, "variables":6, "variable":[ {"name":"var1", "description":"", "value":"", "rule":"", "used":[ "n开始节点","nShopping页","l买手表" ]},{"name":"var4", "description":"", "value":"", "rule":"", "used":[ "nShopping页" ]},{"name":"varx2", "description":"", "value":"", "rule":"", "used":[ "n购买" ]},{"name":"url", "description":"", "value":"", "rule":"", "used":[ "l打开网站" ]},{"name":"var_buy", "description":"", "value":"", "rule":"", "used":[ "l买手表" ]},{"name":"window", "description":"", "value":"", "rule":"", "used":[ "l关闭" ]} ], "init_actions":"模块的初始化条件"},
+  "nodeDataArray": [ 
+{"id":-1, "loc":"-256 -210", "category":"Start", "text":"开始节点", "description":"这里也可以定义变量", "outputvariable":"var1  ", "disabled":false, "properties":""},
+{"id":0, "loc":"-113 -126", "text":"Shopping页", "description":"", "outputvariable":"var1,   _varx = var1 , var4", "disabled":false, "properties":"产品列表=产品列表"},
+{"id":2, "loc":"82 -127", "text":"购买", "description":"", "outputvariable":"_vax1, varx2 , _ccc", "disabled":false, "properties":"购物列表=手表"},
+{"text":"页面关闭", "id":-5, "loc":"71.0 -74.0"}
+ ],
+  "linkDataArray": [ 
+{"key":-1, "from":-1, "to":0, "text":"打开网站", "points":[-187,-166,-161,-159,-140,-146,-124,-126], "description":"", "parameters":"url", "mainpath":true, "action":"buy"},
+{"key":0, "from":0, "to":2, "progress":"true", "text":"买手表", "points":[-70,-122,-30,-131,13,-131,60,-118], "description":"", "parameters":"var1,_varx,var_buy", "weight":"2.0", "mainpath":true, "action":"buy"},
+{"key":1, "from":0, "to":-5, "points":[-70,-111,-27,-111,13,-98,49,-74], "text":"关闭", "description":"", "action":"close", "parameters":"window", "mainpath":false}
+ ]}
